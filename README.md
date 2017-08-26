@@ -15,13 +15,15 @@
 
 ### Loading
 
--`npm install` (only required once)
--`npm run build`
+* `npm install` (only required once)
+
+* `npm run build`
 
 or
 
--`docker-compose build`
--`docker-compose run extension npm run build`
+* `docker-compose build`
+
+* `docker-compose run extension npm run build`
 
 ## Includes the following
 
