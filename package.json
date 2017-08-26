@@ -1,0 +1,22 @@
+{
+  "name": "webextensions-typescript",
+  "version": "0.0.0",
+  "description": "Build chrome extensions using Typescript",
+  "main": "index.js",
+  "scripts": {
+    "clean-dist": "rm -rf ./dist && mkdir -p ./dist",
+    "copy-assets": "cp ./assets/* ./dist/",
+    "prebuild": "npm run clean-dist && npm run copy-assets",
+    "build": "webpack",
+    "prewatch": "npm run prebuild",
+    "watch": "webpack -w"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chrome": "~0.0.47",
+    "ts-loader": "~2.2.2",
+    "typescript": "~2.4.1",
+    "webpack": "~3.1.0"
+  }
+}
