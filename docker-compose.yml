@@ -1,0 +1,9 @@
+version: '3.0'
+services:
+  extension:
+    build: "."
+    image: "extension:latest"
+    volumes:
+      - ./assets:/code/assets
+      - ./src:/code/src
+      - ./dist:/code/dist
