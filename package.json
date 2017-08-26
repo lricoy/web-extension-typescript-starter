@@ -4,7 +4,7 @@
   "description": "Build chrome extensions using Typescript",
   "main": "index.js",
   "scripts": {
-    "clean-dist": "rm -rf ./dist && mkdir -p ./dist",
+    "clean-dist": "rm -rf ./dist/* && mkdir -p ./dist",
     "copy-assets": "cp ./assets/* ./dist/",
     "prebuild": "npm run clean-dist && npm run copy-assets",
     "build": "webpack",
